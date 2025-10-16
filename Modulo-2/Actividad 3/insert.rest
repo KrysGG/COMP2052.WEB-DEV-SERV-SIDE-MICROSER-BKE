@@ -1,0 +1,14 @@
+POST http://127.0.0.1:5000/crear_usuario
+Content-Type: application/json
+
+{
+    "nombre": "Christian",
+    "correo": "Cgiraud9998@arecibointer.edu"
+}
+
+###
+
+GET http://127.0.0.1:5000/usuarios
+
+###
+GET http://127.0.0.1:5000/info

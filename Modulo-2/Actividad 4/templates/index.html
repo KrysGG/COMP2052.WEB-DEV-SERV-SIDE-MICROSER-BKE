@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}{{ page_title }}{% endblock %}
+
+{% block content %}
+  <div class="box">
+    <h1>Bienvenido</h1>
+    <p>Esta app usa <strong>herencia de plantillas</strong> (base.html → páginas hijas) y muestra datos dinámicos.</p>
+    <ul>
+      <li>Usuarios: {{ users_count }}</li>
+      <li>Productos: {{ products_count }}</li>
+    </ul>
+  </div>
+{% endblock %}
