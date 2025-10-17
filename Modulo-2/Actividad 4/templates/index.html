@@ -4,11 +4,12 @@
 
 {% block content %}
   <div class="box">
-    <h1>Bienvenido</h1>
-    <p>Esta app usa <strong>herencia de plantillas</strong> (base.html → páginas hijas) y muestra datos dinámicos.</p>
+    <h1>Gestión de notas finales</h1>
+    <p>App para registrar y visualizar las <strong>notas finales</strong> de estudiantes.</p>
     <ul>
-      <li>Usuarios: {{ users_count }}</li>
-      <li>Productos: {{ products_count }}</li>
+      <li>Total de estudiantes: <strong>{{ students_count }}</strong></li>
+      <li>Promedio general: <strong>{{ avg_grade }}</strong></li>
     </ul>
+    <p>Usa el menu para ver el listado de estudiantes y el <em>resumen de notas</em>.</p>
   </div>
 {% endblock %}

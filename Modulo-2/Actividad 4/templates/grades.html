@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}{{ page_title }}{% endblock %}
+
+{% block content %}
+  <h1>{{ page_title }}</h1>
+
+  <div class="stats">
+    <div class="stat">Estudiantes: <strong>{{ count }}</strong></div>
+    <div class="stat">Promedio: <strong>{{ avg }}</strong></div>
+    <div class="stat">Máxima: <strong>{{ maxg }}</strong></div>
+    <div class="stat">Mínima: <strong>{{ ming }}</strong></div>
+  </div>
+
+  <div class="box">
+    <h3>Listado de notas</h3>
+    <ul>
+      {% for g in grades %}
+        <li>{{ g }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endblock %}

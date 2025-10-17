@@ -11,7 +11,7 @@ def info():
     return {
         "Actividad": "2",
         "Author": "Christian Giraud",
-        "Numero de Estudiante": "R00569998"
+        "Info de app": "App de Gestionar Nota Final de Estudiuantes"
     }
 
 @app.route("/mensaje", methods=["POST"])

@@ -1,19 +1,22 @@
 {% extends "base.html" %}
-
 {% block title %}{{ page_title }}{% endblock %}
 
 {% block content %}
   <h1>{{ page_title }}</h1>
   <table>
     <thead>
-      <tr><th>#</th><th>Nombre</th><th>Email</th></tr>
+      <tr>
+        <th>#</th>
+        <th>Estudiante</th>
+        <th>Nota final</th>
+      </tr>
     </thead>
     <tbody>
-      {% for u in users %}
+      {% for s in students %}
       <tr>
-        <td>{{ u.id }}</td>
-        <td>{{ u.name }}</td>
-        <td><a href="mailto:{{ u.email }}">{{ u.email }}</a></td>
+        <td>{{ s.id }}</td>
+        <td>{{ s.name }}</td>
+        <td>{{ s.final_grade }}</td>
       </tr>
       {% endfor %}
     </tbody>
